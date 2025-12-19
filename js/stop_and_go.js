@@ -21,14 +21,15 @@ function showStopAndGoDialog(nodeId, requestId) {
     left: "0",
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.8)",
+    backgroundColor: "transparent",
     zIndex: "10000",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
     color: "white",
-    fontFamily: "sans-serif"
+    fontFamily: "sans-serif",
+    pointerEvents: "none"
   });
 
   const content = document.createElement("div");
@@ -38,7 +39,8 @@ function showStopAndGoDialog(nodeId, requestId) {
     borderRadius: "10px",
     border: "1px solid #444",
     textAlign: "center",
-    boxShadow: "0 0 20px rgba(0,0,0,0.5)"
+    boxShadow: "0 0 20px rgba(0,0,0,0.5)",
+    pointerEvents: "auto"
   });
 
   const message = document.createElement("h3");
